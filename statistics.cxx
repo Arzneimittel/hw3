@@ -1,6 +1,7 @@
 #include <cmath>
 #include <iostream>
 #include <cstdlib>
+#include <ctime>
 
 using namespace std;
 void f_rand(double*x,const int N){
@@ -27,6 +28,7 @@ void f_stat(double*x, double& mean, double& var,const int N){
 }
 
 int main(){
+   srand(time(NULL));
    const int N = 100;
    double p[N];
    double mean, var;
